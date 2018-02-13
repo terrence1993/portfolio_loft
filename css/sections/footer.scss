@@ -1,0 +1,49 @@
+.footer {
+	box-sizing: border-box;
+	background: #414141;
+	@extend %clearfix;
+    @include fira(regular);
+    height: $footer-height;
+}
+
+.footer__left, .footer__right {
+	float: left;
+	width: 50%;
+}
+
+.footer__right {
+	float: right;
+}
+
+.copyright {
+	margin-bottom: - $footer-height/2;
+    @include inlineblock(middle);
+    font-size: 14px;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	@include fira(light);
+	color: #727272;
+}
+
+.socials {
+	@extend %clearfix;
+    margin: 9px;
+}
+
+.socials__link {
+	margin-left: 8px;
+	width: 32px;
+	height: 32px;
+	float: right;
+}
+
+@each $social in (vk, fb, tw) {
+	.socials__link_#{$social} {
+		background: url('/img/icons/social/#{$social}.png') 0 0 no-repeat;
+
+		&:hover {
+			background: url('/img/icons/social/#{$social}_h.png') 0 0 no-repeat;
+		}
+	}
+}

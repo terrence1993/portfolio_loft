@@ -1,0 +1,35 @@
+@mixin box-shadow($params) {
+    box-shadow: $params;
+    -webkit-box-shadow: $params;
+    -moz-box-shadow: $params;
+}
+
+@mixin transform($x,$y) {
+    transform: translate($x,$y);
+    -webkit-transform: translate($x,$y);
+      -ms-transform: translate($x,$y);
+      -moz-transform: translate($x,$y);
+}
+
+
+%clearfix {
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+
+@mixin inlineblock($valign: top) {
+    display: inline-block;
+    vertical-align: $valign;
+}
+
+
+
+//responsive
+
+@function rem($px) {
+    @return $px / 16px + 0rem;
+}

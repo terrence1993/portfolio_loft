@@ -1,0 +1,78 @@
+ .about {
+     @extend %clearfix;
+ }
+
+
+ .about__left {
+     width: rem(290px);
+     float: left;
+ }
+
+
+ .about__right {
+     width: rem(400px);
+     float: right;
+ }
+
+ .about__pic {
+     position: relative;
+     overflow: hidden;
+     border-radius: 50%;
+     border: rem(3px) solid #fff;
+     width: rem(220px);
+     height: rem(220px);
+     @include box-shadow (0 rem(1px) rem(1px) rem(-1px) $gray);
+ }
+
+ .about__pic-item {
+     position: absolute;
+     left: 50%;
+     right: 50%;
+     height: 100%;
+     width: auto;
+     @include transform(-55%, 0%);
+ }
+
+ .about__text {
+     p {
+         font-size: rem(18px);
+         color: #646464;
+         margin-top: 0;
+         margin-bottom: rem(15px);
+         @include fira(light);
+     }
+
+     height: rem(300px);
+     overflow: auto;
+     margin-bottom: rem(35px);
+ }
+
+ .download {
+     width: rem(175px);
+     float: right;
+     height: rem(40px);
+     @include fira(regular);
+ }
+
+ .about__download-link {
+     @include fira(bold);
+     font-size: rem(14px);
+     line-height: rem(28px);
+     display: block;
+     padding: rem(4px) 0;
+     text-align: center;
+     border: rem(2px) solid $red;
+     border-radius: rem(19px);
+     color: $red;
+     text-decoration: none;
+
+     &:hover {
+         border-color: $red;
+         background-color: $red;
+         color: $white;
+     }
+ }
+
+ .fa {
+     margin-right: rem(10px);
+ }

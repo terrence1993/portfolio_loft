@@ -1,0 +1,107 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Twitter {
+    width: 31px;
+    height: 30px;
+    background-position: -5px -5px;
+}
+
+.sprite-about {
+    width: 16px;
+    height: 18px;
+    background-position: -5px -45px;
+}
+
+.sprite-c_phone {
+    width: 15px;
+    height: 16px;
+    background-position: -5px -73px;
+}
+
+.sprite-carrer {
+    width: 17px;
+    height: 18px;
+    background-position: -5px -99px;
+}
+
+.sprite-download {
+    width: 14px;
+    height: 14px;
+    background-position: -5px -127px;
+}
+
+.sprite-download_hov {
+    width: 14px;
+    height: 14px;
+    background-position: -5px -151px;
+}
+
+.sprite-elipse {
+    width: 20px;
+    height: 20px;
+    background-position: -5px -175px;
+}
+
+.sprite-ico-fb {
+    width: 31px;
+    height: 30px;
+    background-position: -5px -205px;
+}
+
+.sprite-ico-fb-active {
+    width: 31px;
+    height: 30px;
+    background-position: -5px -245px;
+}
+
+.sprite-ico-twit-active {
+    width: 31px;
+    height: 30px;
+    background-position: -5px -285px;
+}
+
+.sprite-mail {
+    width: 19px;
+    height: 15px;
+    background-position: -5px -325px;
+}
+
+.sprite-phone {
+    width: 8px;
+    height: 14px;
+    background-position: -5px -350px;
+}
+
+.sprite-portfolio {
+    width: 18px;
+    height: 15px;
+    background-position: -5px -374px;
+}
+
+.sprite-skype {
+    width: 16px;
+    height: 17px;
+    background-position: -5px -399px;
+}
+
+.sprite-tv {
+    width: 20px;
+    height: 18px;
+    background-position: -5px -426px;
+}
+
+.sprite-vk {
+    width: 32px;
+    height: 30px;
+    background-position: -5px -454px;
+}
+
+.sprite-vk-active {
+    width: 32px;
+    height: 30px;
+    background-position: -5px -494px;
+}

@@ -1,0 +1,65 @@
+.header {
+    background: #fff;
+    @include box-shadow(0 1px 3px 0 rgba(#000, .2));
+    @extend %clearfix;
+    @include fira(regular);
+    height: 5rem;
+    margin-bottom: 1.25rem;
+}
+
+.header__left, .header__right {
+    float: left;
+    width: 50%;
+}
+
+.header__right {
+    float: right;
+}
+
+.contacts {
+    float: right;
+    @extend %clearfix;
+    margin-top: rem(25px);
+}
+
+a.contacts__dropdown_reff {
+    @include fira(bold);
+    line-height: rem(28px);
+    font-size: rem(18px);
+    color: $blue;
+    text-decoration: none;
+    background: url('/img/decor/border_bot.png') 0 bottom repeat-x;
+
+    &:hover {
+        color: $red;
+        background: url('/img/decor/border_bot-h.png') 0 bottom repeat-x;
+    }
+}
+
+.user {
+    margin: 0.6rem 0;
+    @include inlineblock(middle);
+}
+
+.user__avatar {
+    @include inlineblock(middle);
+    width: rem(60px);
+    height: rem(60px);
+    overflow: hidden;
+    border-radius: 50%;
+    border: rem(2px) solid #bebebe;
+    margin-right: rem(20px);
+    box-sizing: border-box;
+}
+
+
+img.user__avatar-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.user__username {
+    @include inlineblock(middle);
+    line-height: rem(28px);
+    font-size: rem(18px);
+}
